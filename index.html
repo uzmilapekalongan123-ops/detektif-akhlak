@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detektif Akhlak</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Detektif Akhlak</h1>
+        <p class="subtitle">Cari petunjuk, tangkap mindestens!</p>
+      </header>
+
+      <section id="screen-start" class="card">
+        <h2>Mulai Misi</h2>
+        <p>
+          Kamu adalah detektif cilik. Jawab setiap situasi dengan memilih jawaban yang paling
+          mencerminkan akhlak mulia.
+        </p>
+        <button id="btn-start" class="btn btn-primary">Mulai Misi</button>
+      </section>
+
+      <section id="screen-game" class="card hidden">
+        <div class="hud">
+          <span id="hud-progress">Soal 1 dari 6</span>
+          <span id="hud-score">Skor: 0</span>
+        </div>
+        <div class="progressbar"><div id="progress-fill"></div></div>
+        <p class="category" id="question-category"></p>
+        <h2 id="question-text"></h2>
+        <div id="options" class="options"></div>
+        <p id="feedback" class="feedback hidden"></p>
+        <button id="btn-next" class="btn btn-primary hidden">Lanjut</button>
+      </section>
+
+      <section id="screen-result" class="card hidden">
+        <div class="badge" id="result-badge">🏆</div>
+        <h2 id="result-rank"></h2>
+        <p id="result-detail" class="subtitle"></p>
+        <button id="btn-restart" class="btn btn-primary">Main Lagi</button>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

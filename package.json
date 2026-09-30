@@ -1,0 +1,24 @@
+{
+  "name": "detektif-akhlak",
+  "version": "1.0.0",
+  "description": "Game web edukasi akhlak untuk siswa SD, bergaya detektif",
+  "type": "module",
+  "main": "src/game.js",
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "serve": "node tools/serve.js",
+    "check": "node --check src/game.js && node --check src/questions.js && node --check src/main.js && node --check tools/serve.js && node --test"
+  },
+  "keywords": [
+    "akhlak",
+    "edukasi",
+    "game",
+    "pai",
+    "sd"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
