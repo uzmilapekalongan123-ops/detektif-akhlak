@@ -15,9 +15,11 @@ menelusuri situasi sehari-hari dan memilih jawaban yang mencerminkan akhlak muli
 Butuh Node.js 20 atau lebih baru. Tidak ada dependensi eksternal.
 
 ```bash
-npm test        # jalankan unit test
-npm run serve   # jalankan server lokal di http://localhost:8080
-npm run check   # syntax check + test
+npm test           # unit test (node:test)
+npm run test:smoke # simulasi main penuh + 200 permainan acak
+npm run lint       # syntax check semua modul
+npm run check      # lint + unit test + smoke test
+npm run serve      # server lokal di http://localhost:8080
 ```
 
 Buka `index.html` langsung di browser juga bisa, tanpa server.
@@ -32,6 +34,8 @@ src/main.js         perekat DOM dan event
 src/style.css       gaya tampilan
 tools/serve.js      server statis sederhana
 test/game.test.js   unit test dengan node:test
+test/smoke.js       simulasi permainan penuh
+.github/workflows/  CI: lint + test di Node 20/22/24, Linux & Windows
 ```
 
 ## Lisensi

@@ -7,8 +7,10 @@
   "scripts": {
     "test": "node --test",
     "test:watch": "node --test --watch",
+    "test:smoke": "node test/smoke.js",
     "serve": "node tools/serve.js",
-    "check": "node --check src/game.js && node --check src/questions.js && node --check src/main.js && node --check tools/serve.js && node --test"
+    "lint": "node --check src/game.js && node --check src/questions.js && node --check src/main.js && node --check tools/serve.js",
+    "check": "npm run lint && npm test && npm run test:smoke"
   },
   "keywords": [
     "akhlak",
