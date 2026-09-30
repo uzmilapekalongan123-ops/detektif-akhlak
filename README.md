@@ -3,7 +3,7 @@
 Game web edukasi untuk siswa SD. Anak-anak berperan sebagai detektif cilik yang
 menelusuri situasi sehari-hari dan memilih jawaban yang mencerminkan akhlak mulia.
 
-**Buka online:** https://uzmilapekalongan123-ops.github.io/detektif-akhlak/
+**Buka online:** https://uzmilapekalongan123-ops.github.io/detektif_sikap/
 
 ## Fitur
 
